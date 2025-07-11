@@ -1,22 +1,56 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# 📱 C# Smartphone Abstraction Project
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+> 🚀 A console-based C# application designed to showcase the power and elegance of **Object-Oriented Programming (OOP)** principles — **Abstraction**, **Inheritance**, and **Polymorphism** — through a fun and practical simulation involving smartphones from **Nokia** and **iPhone**.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+---
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+## 🧠 About the Project
 
-![Diagrama classes](Imagens/diagrama.png)
+This project was developed as part of the **OOP module** within the [DIO - Digital Innovation One .NET Track](https://www.dio.me/).
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+It demonstrates how abstract modeling and class hierarchies can be applied to represent real-world objects (smartphones) and their behavior differences while sharing a common base structure
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+---
+
+## 🎯 Project Goals
+
+- ✅ Apply core **OOP concepts** in a clean and testable way
+- ✅ Use an **abstract base class (`Smartphone`)** to enforce consistent structure
+- ✅ Implement **brand-specific logic** via concrete classes: `Nokia` and `Iphone`
+- ✅ Promote **code reuse**, **readability**, and **flexibility**
+
+
+
+---
+
+## 🧪 Sample Output
+
+```plaintext
+
+Testing Nokia Smartphone:
+Calling...
+Receiving call...
+Installing the application "Snake Xenzia" on your Nokia
+Nokia Info - Number: 1234-5678, Model: Nokia 3310, IMEI: 111222333, Memory: 16GB
+
+-------------------------------------------
+
+Testing iPhone Smartphone:
+Calling...
+Receiving call...
+Installing the application "Instagram" on your iPhone
+Installing the application "WhatsApp" on your iPhone
+iPhone Info - Number: 9876-5432, Model: iPhone 15 Pro, IMEI: 999888777, Memory: 256GB
+
+
+OOP Concepts Demonstrated
+
+💡 Concept	           ✅ Description
+Abstraction           	Defines a shared contract via Smartphone, hiding internal implementation
+Inheritance	            Nokia and Iphone inherit from the Smartphone base class
+Polymorphism	        Each smartphone overrides InstallApplication() with brand-specific logic
+
+
+👨‍💻 Author: Tiago Borges
+Student of BSc in Software Development
+Brigham Young University - Idaho
